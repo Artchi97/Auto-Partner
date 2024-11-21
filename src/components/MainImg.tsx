@@ -1,6 +1,9 @@
+import { useLanguage } from "../LanguageContext";
 import mainImg from "../assets/pexels-tima-miroshnichenko-5640639.jpg";
 
 const MainImg: React.FC = () => {
+  const { translations } = useLanguage();
+
   return (
     <div
       style={{ backgroundImage: `url(${mainImg})` }}
@@ -10,8 +13,7 @@ const MainImg: React.FC = () => {
 
       <div className="flex items-center justify-center absolute w-full h-full px-8 xl:px-12">
         <p className="font-oswald font-semibold italic animate-pulse-text text-xl md:text-3xl lg:text-5xl  text-center leading-[1.4] xl:leading-[1.5] bg-gradient-to-r from-white to-yellow-100 text-transparent bg-clip-text">
-          Twoje opony, Twoje bezpieczeństwo. Zaufaj specjalistom od
-          wulkanizacji, którzy zadbają o każdą trasę.
+          {translations.mainTitle}
         </p>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { useLanguage } from "../LanguageContext";
 import logoImg from "../assets/Logo Auto-Partner .webp";
 import mail from "../assets/envelope-svgrepo-com (1).svg";
 import phone from "../assets/phone-svgrepo-com.svg";
@@ -8,6 +9,7 @@ interface idProp {
 }
 
 const Contact: React.FC<idProp> = ({ id }) => {
+  const { translations } = useLanguage();
   return (
     <div id={id}>
       <h2
@@ -28,14 +30,18 @@ const Contact: React.FC<idProp> = ({ id }) => {
           </p>
           <p className="text-white">Hauptstraße 16</p>
           <p className="text-white mb-8">39443 Staßfurt - Atzendorf</p>
-          <p className="text-white mb-4 font-bold">Godziny otwarcia:</p>
-          <p className="text-white">Pon - Pt 9:00 - 17:00</p>
-          <p className="text-white">Sb 8:00 - 14:00</p>
+          <p className="text-white mb-4 font-bold">
+            {translations.contact.openHoursHeader}
+          </p>
+          <p className="text-white">
+            {translations.contact.monToFri} 9:00 - 17:00
+          </p>
+          <p className="text-white">{translations.contact.sat} 8:00 - 14:00</p>
         </div>
       </div>
       <div>
         <h3 className="font-bold text-xl lg:text-3xl xxl:text-4xl text-center mt-8 mb-8">
-          Masz pytania? Chętnie pomożemy!
+          {translations.contact.anyQuestionHeader}
         </h3>
         <div className="flex flex-col xl:flex-row">
           <div className="text-center mx-auto">
@@ -61,7 +67,7 @@ const Contact: React.FC<idProp> = ({ id }) => {
             />
             <p className="lg:text-xl xxl:text-2xl"></p>
             <a
-              className="tel-nr hover:text-yellow-600 transition-all duration-300"
+              className="hover:text-yellow-600 transition-all duration-300"
               href="tel:+49(0)15259329919"
             >
               +49 (0) 1525 932 9919
@@ -70,7 +76,7 @@ const Contact: React.FC<idProp> = ({ id }) => {
         </div>
       </div>
       <h3 className="font-bold text-xl lg:text-3xl xxl:text-4xl text-center mt-8 xl:mt-12 mb-8">
-        Odwiedź również nasze media społecznościowe:
+        {translations.contact.socialMediaHeader}
       </h3>
       <a
         href="https://www.facebook.com/profile.php?id=61568507917324"
@@ -86,10 +92,10 @@ const Contact: React.FC<idProp> = ({ id }) => {
       </a>
 
       <h3 className="font-bold text-xl lg:text-3xl xxl:text-4xl text-center mt-8 xl:mt-12 mb-8">
-        Tu jesteśmy:
+        {translations.contact.mapHeader}
       </h3>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4921.521339395849!2d11.595257297742398!3d51.92007749063425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a5ef3e1f22f519%3A0xb8a32ea9ef7c09b8!2sHauptstra%C3%9Fe%2016%2C%2039443%20Sta%C3%9Ffurt%2C%20Niemcy!5e0!3m2!1spl!2spl!4v1732173016397!5m2!1spl!2spl"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4921.521339395849!2d11.595257297742398!3d51.92007749063425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a5ef3e1f22f519%3A0xb8a32ea9ef7c09b8!2sHauptstra%C3%9Fe%2016%2C%2039443%20Sta%C3%9Ffurt%2C%20Niemcy!5e0!3m2!1spl!2spl!4v1732173016397!5m2!1spl!2spl&hl=de&gl=DE"
         width="600"
         height="450"
         loading="lazy"

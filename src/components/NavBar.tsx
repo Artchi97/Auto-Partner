@@ -1,19 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { useLanguage } from "../LanguageContext";
 
 const NavBar: React.FC = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
-
-  interface NavItem {
-    name: string;
-    id: string;
-  }
-
-  const navItems: NavItem[] = [
-    { name: "O nas", id: "about-us" },
-    { name: "Usługi", id: "services" },
-    { name: "Kontakt", id: "contact" },
-  ];
+  const { translations } = useLanguage();
 
   function showMenu() {
     setMenuIsVisible(!menuIsVisible);
@@ -48,12 +39,9 @@ const NavBar: React.FC = () => {
         } fixed top-0 right-0 w-3/4 sm:w-1/2 md:w-auto h-screen md:h-auto bg-mainBlack md:bg-transparent shadow-2xl md:shadow-none transition-transform duration-500 md:flex md:relative md:translate-x-0 z-30`}
       >
         <ul className="flex flex-col md:flex-row gap-14 items-center justify-center w-full py-12 md:py-0">
-          {navItems.map((item, index) => (
-            <Link to={item.id} smooth={true} duration={500}>
-              <li
-                key={index}
-                className="tracking-[2px] text-xl font-semibold md:text-xl text-mainYellow md:text-mainBlack px-6 py-2 rounded-full hover:bg-mainBlack hover:text-mainYellow hover:cursor-pointer transition-all duration-300"
-              >
+          {translations.nav.map((item, index) => (
+            <Link key={index} to={item.id} smooth={true} duration={500}>
+              <li className="tracking-[2px] text-xl font-semibold md:text-xl text-mainYellow md:text-mainBlack px-6 py-2 rounded-full hover:bg-mainBlack hover:text-mainYellow hover:cursor-pointer transition-all duration-300">
                 {item.name}
               </li>
             </Link>

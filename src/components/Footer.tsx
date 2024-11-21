@@ -1,3 +1,4 @@
+import { useLanguage } from "../LanguageContext";
 import { Link } from "react-scroll";
 
 import mail from "../assets/envelope-svgrepo-com (1)-footer.svg";
@@ -6,6 +7,7 @@ import facebook from "../assets/facebook-svgrepo-com.svg";
 import logo from "../assets/Logo Auto-Partner .webp";
 
 const Footer: React.FC = () => {
+  const { translations } = useLanguage();
   const navStyle: string =
     "text-mainYellow mr-4 ml-4 md:mr-6 ml-6 hover:cursor-pointer py-1 px-4 hover:bg-mainYellow hover:text-mainBlack rounded-full transition-all duration-300";
 
@@ -13,15 +15,15 @@ const Footer: React.FC = () => {
     <footer className="bg-mainBlack px-4 md:px-8 pt-8 pb-2 relative">
       <nav className="text-mainYellow text-center xl:text-2xl">
         <Link to="about-us" smooth={true} duration={500}>
-          <span className={navStyle}>O nas</span>
+          <span className={navStyle}>{translations.nav[0].name}</span>
         </Link>
         |
         <Link to="about-us" smooth={true} duration={500}>
-          <span className={navStyle}>Usługi</span>
+          <span className={navStyle}>{translations.nav[1].name}</span>
         </Link>
         |
         <Link to="contact" smooth={true} duration={500}>
-          <span className={navStyle}>Kontakt</span>
+          <span className={navStyle}>{translations.nav[2].name}</span>
         </Link>
       </nav>
       <div className="xl:flex items-center justify-evenly">
@@ -84,8 +86,8 @@ const Footer: React.FC = () => {
       <p className="text-white text-center text-xs italic xl:mt-24">
         &copy; Copyright 2024 - all rights reserved
       </p>
-      <p className="text-xs absolute bottom-2 right-2 italic text-mainYellow">
-        Wykonanie: Artur Wojciechowski -{" "}
+      <p className="text-xs mt-6 lg:mt-0 text-center lg:absolute lg:bottom-2 lg:right-4 italic text-mainYellow ">
+        {translations.createdBy} Artur Wojciechowski -{" "}
         <a className="font-semibold" href="https://github.com/Artchi97">
           https://github.com/Artchi97
         </a>

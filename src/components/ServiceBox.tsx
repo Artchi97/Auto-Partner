@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useLanguage } from "../LanguageContext";
 
 interface ServiceBoxProps {
   icon: string;
@@ -18,6 +19,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({
   serviceContent,
 }) => {
   const [showContent, setShowContent] = useState(false);
+  const { translations } = useLanguage();
 
   const contentRef = useRef<HTMLDivElement | null>(null);
 
@@ -47,7 +49,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({
       <img
         src={serviceImg}
         alt={serviceImgAlt}
-        className="h-40 md:h-48 2xl:h-64 w-full object-cover"
+        className="h-40 h-56 md:h-48 2xl:h-72 w-full object-cover"
       />
       <div
         ref={contentRef}
@@ -61,7 +63,9 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({
         className="rounded-full z-10 px-8 py-2 bg-mainBlack text-white mb-6 hover:cursor-pointer hover:text-mainYellow hover:shadow-xl transition-all duration-300"
         onClick={toggleContent}
       >
-        {showContent ? "Ukryj" : "Pokaż więcej"}
+        {showContent
+          ? translations.services.hideBtn
+          : translations.services.showMoreBtn}
       </button>
     </div>
   );
