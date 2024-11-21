@@ -18,7 +18,7 @@ const NavBar: React.FC = () => {
       >
         <div
           className={`w-full h-1.5 bg-mainBlack rounded-full transition-all duration-300 ${
-            menuIsVisible ? "rotate-45 translate-y-2 bg-mainYellow" : ""
+            menuIsVisible ? "rotate-45 translate-y-3.5 bg-mainYellow" : ""
           }`}
         ></div>
         <div
@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
         ></div>
         <div
           className={`w-full h-1.5 bg-mainBlack rounded-full transition-all duration-300 ${
-            menuIsVisible ? "-rotate-45 -translate-y-2 bg-mainYellow" : ""
+            menuIsVisible ? "-rotate-45 -translate-y-3.5 bg-mainYellow" : ""
           }`}
         ></div>
       </button>
@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
       <nav
         className={`${
           menuIsVisible ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 w-3/4 sm:w-1/2 md:w-auto h-screen md:h-auto bg-mainBlack md:bg-transparent shadow-2xl md:shadow-none transition-transform duration-500 md:flex md:relative md:translate-x-0 z-30`}
+        } fixed top-0 right-0 w-full md:w-1/2 md:w-auto h-screen md:h-auto bg-mainBlack md:bg-transparent shadow-2xl md:shadow-none transition-transform duration-500 md:flex md:relative md:translate-x-0 z-30`}
       >
         <ul className="flex flex-col md:flex-row gap-14 items-center justify-center w-full py-12 md:py-0">
           {translations.nav.map((item, index) => (
