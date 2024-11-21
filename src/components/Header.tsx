@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-mainYellow w-full h-36 lg:h-40 2xl:h-56 flex justify-between px-6 relative">
-      <div className="absolute top-2 right-2 flex gap-3 md:gap-5 z-40">
+      <div className="absolute top-2 right-6 flex gap-3 md:gap-5 z-40">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 5 3"
