@@ -38,9 +38,13 @@ const Footer: React.FC = () => {
           </p>
           <p className="text-white">Haupstraße 16</p>
           <p className="text-white mb-6">39443 Staßfurt - Atzendorf</p>
-          <p className="text-white mb-2 font-semibold">Godziny otwarcia:</p>
-          <p className="text-white">Pon - Pt 9:00 - 17:00</p>
-          <p className="text-white">Sb 8:00 - 14:00</p>
+          <p className="text-white mb-2 font-semibold">
+            {translations.contact.openHoursHeader}
+          </p>
+          <p className="text-white">
+            {translations.contact.monToFri} 9:00 - 17:00
+          </p>
+          <p className="text-white">{translations.contact.sat} 8:00 - 14:00</p>
         </div>
         <div className="flex flex-col">
           <div className="text-center mx-auto flex items-center gap-6 mt-12">
