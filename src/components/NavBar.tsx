@@ -1,9 +1,19 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar: React.FC = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
-  const navItems: string[] = ["O nas", "Usługi", "Kontakt"];
+  interface NavItem {
+    name: string;
+    id: string;
+  }
+
+  const navItems: NavItem[] = [
+    { name: "O nas", id: "about-us" },
+    { name: "Usługi", id: "services" },
+    { name: "Kontakt", id: "contact" },
+  ];
 
   function showMenu() {
     setMenuIsVisible(!menuIsVisible);
@@ -39,12 +49,14 @@ const NavBar: React.FC = () => {
       >
         <ul className="flex flex-col md:flex-row gap-14 items-center justify-center w-full py-12 md:py-0">
           {navItems.map((item, index) => (
-            <li
-              key={index}
-              className="tracking-[2px] text-xl md:text-xl font-semibold text-mainYellow md:text-mainBlack px-6 py-2 rounded-full hover:bg-mainBlack hover:text-mainYellow hover:cursor-pointer transition-all duration-300"
-            >
-              {item}
-            </li>
+            <Link to={item.id} smooth={true} duration={500}>
+              <li
+                key={index}
+                className="tracking-[2px] text-xl font-semibold md:text-xl text-mainYellow md:text-mainBlack px-6 py-2 rounded-full hover:bg-mainBlack hover:text-mainYellow hover:cursor-pointer transition-all duration-300"
+              >
+                {item.name}
+              </li>
+            </Link>
           ))}
         </ul>
       </nav>

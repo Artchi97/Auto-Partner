@@ -6,6 +6,7 @@ import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ToTopBtn";
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
       <main>
         <MainImg />
         <TrustUs />
-        <AboutUs />
-        <Services />
-        <Contact />
+        <AboutUs id="about-us" />
+        <Services id="services" />
+        <Contact id="contact" />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

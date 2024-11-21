@@ -15,7 +15,11 @@ import pirelli from "../assets/logo/pirelli-logo.webp";
 import semperit from "../assets/logo/semperit-logo.webp";
 import yokohama from "../assets/logo/yokohama-logo.webp";
 
-const AboutUs: React.FC = () => {
+interface idProp {
+  id: string;
+}
+
+const AboutUs: React.FC<idProp> = ({ id }) => {
   const logos = [
     barum,
     bfgoodrich,
@@ -36,7 +40,7 @@ const AboutUs: React.FC = () => {
   ];
 
   return (
-    <section>
+    <section id={id}>
       <h2
         className="font-oswald tracking-wide w-full bg-mainBlack text-mainYellow font-bold text-2xl lg:text-3xl text-center
       py-4 mb-8"

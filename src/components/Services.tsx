@@ -7,9 +7,13 @@ import moneyIcon from "../assets/money-bag-svgrepo-com.svg";
 
 import ServiceBox from "./ServiceBox";
 
-const Services: React.FC = () => {
+interface idProp {
+  id: string;
+}
+
+const Services: React.FC<idProp> = ({ id }) => {
   return (
-    <div className="mb-12 mt-16">
+    <div id={id} className="mb-12 mt-16">
       <h2
         className="font-oswald tracking-wide w-full bg-mainBlack text-mainYellow font-bold text-2xl lg:text-3xl text-center
       py-4 mb-12 mt-8"

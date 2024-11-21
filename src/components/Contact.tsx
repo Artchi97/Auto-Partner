@@ -3,9 +3,13 @@ import mail from "../assets/envelope-svgrepo-com (1).svg";
 import phone from "../assets/phone-svgrepo-com.svg";
 import facebook from "../assets/facebook-svgrepo-com.svg";
 
-const Contact: React.FC = () => {
+interface idProp {
+  id: string;
+}
+
+const Contact: React.FC<idProp> = ({ id }) => {
   return (
-    <div>
+    <div id={id}>
       <h2
         className="font-oswald tracking-wide w-full bg-mainBlack text-mainYellow font-bold text-2xl lg:text-3xl text-center
       py-4"
