@@ -25,8 +25,10 @@ const ScrollToTopButton = () => {
 
   return (
     <button
-      className={`w-12 h-12 font-semibold bg-mainYellow text-mainBlack rounded-full fixed bottom-5 right-5 z-50 ${
-        isVisible ? "block" : "hidden"
+      className={`w-12 h-12 font-semibold bg-mainYellow text-mainBlack rounded-full fixed bottom-5 right-5 z-50 transition-opacity duration-1000 ${
+        isVisible
+          ? "opacity-100 visibility-visible pointer-events-auto"
+          : "opacity-0 visibility-hidden pointer-events-none"
       }`}
       onClick={scrollToTop}
     >

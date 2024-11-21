@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       </div>
       <img src={logo} alt="logo auto-partner" className="h-5/6" />
       <div className="flex justify-items-center items-center hidden 2xl:flex">
-        <CallMe bgColor="" textColor="mainBlack" />
+        <CallMe bgColor="" />
       </div>
 
       <NavBar />

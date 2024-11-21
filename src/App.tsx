@@ -7,25 +7,45 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ToTopBtn";
+import FadeIn from "./components/FadeIn";
 
 function App() {
   return (
     <div>
-      <Header />
-      <div className="block 2xl:hidden mt-8 mb-8">
-        <CallMe
-          bgColor="bg-mainBlack"
-          others="font-bold bg-gradient-to-r from-white to-yellow-500 text-transparent bg-clip-text"
-        />
-      </div>
+      <FadeIn>
+        <Header />
+      </FadeIn>
+      <FadeIn>
+        <div className="block 2xl:hidden mt-8 mb-8">
+          <CallMe
+            bgColor="bg-mainBlack"
+            others="font-bold bg-gradient-to-r from-white to-yellow-500 text-transparent bg-clip-text"
+          />
+        </div>
+      </FadeIn>
       <main>
-        <MainImg />
-        <TrustUs />
-        <AboutUs id="about-us" />
-        <Services id="services" />
-        <Contact id="contact" />
+        <FadeIn>
+          <MainImg />
+        </FadeIn>
+        <FadeIn>
+          <TrustUs />
+        </FadeIn>
+
+        <FadeIn>
+          <AboutUs id="about-us" />
+        </FadeIn>
+
+        <FadeIn>
+          <Services id="services" />
+        </FadeIn>
+
+        <FadeIn>
+          <Contact id="contact" />
+        </FadeIn>
       </main>
-      <Footer />
+      <FadeIn>
+        <Footer />
+      </FadeIn>
       <ScrollToTopButton />
     </div>
   );

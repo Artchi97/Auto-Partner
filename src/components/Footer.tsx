@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 import mail from "../assets/envelope-svgrepo-com (1)-footer.svg";
 import phone from "../assets/phone-svgrepo-com-footer.svg";
 import facebook from "../assets/facebook-svgrepo-com.svg";
@@ -10,9 +12,17 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-mainBlack px-4 md:px-8 pt-8 pb-2 relative">
       <nav className="text-mainYellow text-center xl:text-2xl">
-        <span className={navStyle}>O nas</span>|
-        <span className={navStyle}>Usługi</span>|
-        <span className={navStyle}>Kontakt</span>
+        <Link to="about-us" smooth={true} duration={500}>
+          <span className={navStyle}>O nas</span>
+        </Link>
+        |
+        <Link to="about-us" smooth={true} duration={500}>
+          <span className={navStyle}>Usługi</span>
+        </Link>
+        |
+        <Link to="contact" smooth={true} duration={500}>
+          <span className={navStyle}>Kontakt</span>
+        </Link>
       </nav>
       <div className="xl:flex items-center justify-evenly">
         <div className="mt-12 text-center">

@@ -8,12 +8,17 @@ export default {
       },
       animation: {
         "pulse-text": "pulseText 5s ease-in-out infinite",
+        "fade-in": "fadeIn 0.5s ease-in-out",
       },
       keyframes: {
         pulseText: {
           "0%": { opacity: 0.9 },
           "50%": { opacity: 0.5 },
           "100%": { opacity: 0.9 },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
       colors: {
