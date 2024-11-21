@@ -40,7 +40,13 @@ const NavBar: React.FC = () => {
       >
         <ul className="flex flex-col md:flex-row gap-14 items-center justify-center w-full py-12 md:py-0">
           {translations.nav.map((item, index) => (
-            <Link key={index} to={item.id} smooth={true} duration={500}>
+            <Link
+              key={index}
+              to={item.id}
+              smooth={true}
+              duration={500}
+              onClick={showMenu}
+            >
               <li className="tracking-[2px] text-xl font-semibold md:text-xl text-mainYellow md:text-mainBlack px-6 py-2 rounded-full hover:bg-mainBlack hover:text-mainYellow hover:cursor-pointer transition-all duration-300">
                 {item.name}
               </li>
