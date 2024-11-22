@@ -16,7 +16,7 @@ const Contact: React.FC<idProp> = ({ id }) => {
         className="font-oswald tracking-wide w-full bg-mainBlack text-mainYellow font-bold text-2xl lg:text-3xl text-center
       py-4"
       >
-        Kontakt
+        {translations.contact.headerContact}
       </h2>
       <div
         style={{ backgroundImage: `url(${logoImg})` }}
