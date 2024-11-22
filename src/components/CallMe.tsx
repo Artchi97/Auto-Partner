@@ -16,9 +16,11 @@ const CallMe: React.FC<CallMeProps> = ({ bgColor, textColor, others }) => {
       </p>
       <a href="tel:+49(0)15259329919">
         <button
-          className={`text-center px-12 py-2 rounded-full text-xl xl:text-2xl border-2 border-mainBlack ${textColor} font-bold hover:shadow-xl hover:bg-mainBlack ${bgColor}`}
+          className={`text-center  rounded-full text-xl xl:text-2xl border-2 border-mainBlack ${textColor} font-bold hover:shadow-xl  hover:bg-mainBlack transition-all ${bgColor}`}
         >
-          <span className={`font-bold tracking-wide ${others}`}>
+          <span
+            className={`font-bold tracking-wide block w-full h-full hover:text-mainYellow px-16 py-2 transition-all duration-300 ${others}`}
+          >
             {translations.call}
           </span>
         </button>
