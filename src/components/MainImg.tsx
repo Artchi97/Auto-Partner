@@ -2,14 +2,15 @@ import { useLanguage } from "../LanguageContext";
 import mainImg from "../assets/pexels-tima-miroshnichenko-5640639.jpg";
 
 const MainImg: React.FC = () => {
-  const { translations } = useLanguage();
+  const { translations, language } = useLanguage();
 
-  if (!translations || !translations.mainTitle) {
+  if (!translations.mainTitle || !translations) {
     return null;
   }
 
   return (
     <div
+      key={language}
       style={{ backgroundImage: `url(${mainImg})` }}
       className="bg-cover bg-center w-full h-60 md:h-96 mt-8 sm:mt-0 relative"
     >

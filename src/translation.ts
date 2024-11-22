@@ -60,8 +60,7 @@ export const translation: TranslationContent = {
       { name: "Dienstleistungen", id: "services" },
       { name: "Kontakt", id: "contact" },
     ],
-    mainTitle:
-      "Ihre Reifen, Ihre Sicherheit. Vertrauen Sie auf Vulkanisationsspezialisten, die sich um jeden Weg kümmern.",
+
     trustUs: {
       headerTrustUs: "Warum sollten Sie uns vertrauen?",
       p1: "Willkommen bei ",
@@ -103,6 +102,8 @@ export const translation: TranslationContent = {
     },
     createdBy: "Ausführung: ",
     call: "Anruf",
+    mainTitle:
+      "Ihre Reifen, Ihre Sicherheit. Vertrauen Sie auf Vulkanisationsspezialisten, die sich um jeden Weg kümmern.",
   },
   eng: {
     spanText: "Auto-Partner Atzendorf!",
@@ -113,8 +114,7 @@ export const translation: TranslationContent = {
       { name: "Services", id: "services" },
       { name: "Contact", id: "contact" },
     ],
-    mainTitle:
-      "Your tires, your safety. Trust the vulcanization specialists who will take care of every journey.",
+
     trustUs: {
       headerTrustUs: "Why should you trust us?",
       p1: "Welcome to ",
@@ -156,6 +156,8 @@ export const translation: TranslationContent = {
     },
     createdBy: "Implementation",
     call: "Call",
+    mainTitle:
+      "Your tires, your safety. Trust the vulcanization specialists who will take care of every journey.",
   },
   pl: {
     spanText: "Auto-Partner Atzendorf!",
@@ -166,8 +168,7 @@ export const translation: TranslationContent = {
       { name: "Usługi", id: "services" },
       { name: "Kontakt", id: "contact" },
     ],
-    mainTitle:
-      "Twoje opony, Twoje bezpieczeństwo. Zaufaj specjalistom od wulkanizacji, którzy zadbają o każdą trasę.",
+
     trustUs: {
       headerTrustUs: "Dlaczego warto nam zaufać?",
       p1: "Witamy w ",
@@ -209,5 +210,7 @@ export const translation: TranslationContent = {
     },
     createdBy: "Wykonanie: ",
     call: "Zadzwoń",
+    mainTitle:
+      "Twoje opony, Twoje bezpieczeństwo. Zaufaj specjalistom od wulkanizacji, którzy zadbają o każdą trasę.",
   },
 };
