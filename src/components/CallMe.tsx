@@ -11,7 +11,7 @@ const CallMe: React.FC<CallMeProps> = ({ bgColor, textColor, others }) => {
 
   return (
     <div className="flex flex-col items-center justify-items-center self-center text-center text-base">
-      <p className="mb-6 text-xl xl:text-2xl px-4">
+      <p className="mb-6 text-xl xl:text-2xl px-2">
         {translations.headerQuestion}
       </p>
       <a href="tel:+49(0)15259329919">

@@ -87,7 +87,7 @@ export const translation: TranslationContent = {
       tyreSalesDesc:
         "Unsere erfahrenen Mitarbeiter beraten Sie gerne, welche Reifen am besten zu Ihrem Fahrzeug passen, unter Berücksichtigung sowohl des Fahrzeugmodells als auch Ihrer individuellen Bedürfnisse. Wir kümmern uns nicht nur um die professionelle Auswahl der Reifen, sondern auch um deren Bestellung und fachgerechte Montage. Wir sorgen dafür, dass jeder Service-Schritt reibungslos und nach höchsten Standards abläuft, um Ihnen Komfort und Sicherheit auf der Straße zu garantieren.",
       carServiceDesc:
-        "Bald erweitern wir unser Angebot um einen umfassenden Werkstattservice, in dessen Rahmen wir eine Vielzahl von Dienstleistungen anbieten werden, wie z.B. die allgemeine Inspektion des technischen Zustands von Fahrzeugen, den Ölwechsel, den Austausch von Filtern, Bremsbelägen und -scheiben sowie viele weitere Dienstleistungen im Bereich der Fahrzeugwartung und -reparatur. Unser Ziel ist es, Ihnen einen Rundum-Service zu bieten, damit Ihr Fahrzeug immer in einwandfreiem Zustand bleibt. Wir laden Sie ein, unser Angebot zu nutzen!",
+        "Bald erweitern wir unser Angebot um einen umfassenden Werkstattservice, in dessen Rahmen wir eine Vielzahl von Dienstleistungen anbieten werden, wie z.B. die allgemeine Inspektion des technischen Zustands von Fahrzeugen, Ölwechsel, den Austausch von Filtern, Bremsbelägen und -scheiben sowie viele weitere Dienstleistungen im Bereich der Fahrzeugwartung und -reparatur. Unser Ziel ist es, Ihnen einen Rundum-Service zu bieten, damit Ihr Fahrzeug immer in einwandfreiem Zustand bleibt. Wir laden Sie ein, unser Angebot zu nutzen!",
       showMoreBtn: "Mehr anzeigen",
       hideBtn: "Verbergen",
     },
