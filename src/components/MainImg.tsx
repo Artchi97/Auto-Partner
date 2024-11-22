@@ -4,6 +4,10 @@ import mainImg from "../assets/pexels-tima-miroshnichenko-5640639.jpg";
 const MainImg: React.FC = () => {
   const { translations } = useLanguage();
 
+  if (!translations || !translations.mainTitle) {
+    return null;
+  }
+
   return (
     <div
       style={{ backgroundImage: `url(${mainImg})` }}
