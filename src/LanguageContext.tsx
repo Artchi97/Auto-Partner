@@ -1,4 +1,10 @@
-import React, { createContext, useState, ReactNode, useContext } from "react";
+import React, {
+  createContext,
+  useState,
+  useEffect,
+  ReactNode,
+  useContext,
+} from "react";
 import { translation } from "./translation";
 
 type Language = "de" | "eng" | "pl";
@@ -72,7 +78,13 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<Language>(defaultLanguage);
+  const [language, setLanguage] = useState<Language>(() => {
+    return (localStorage.getItem("appLanguage") as Language) || defaultLanguage;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("appLanguage", language);
+  }, [language]);
 
   const setLanguageHandler = (newLanguage: Language) => {
     setLanguage(newLanguage);

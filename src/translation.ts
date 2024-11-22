@@ -117,7 +117,7 @@ export const translation: TranslationContent = {
       "Your tires, your safety. Trust the vulcanization specialists who will take care of every journey.",
     trustUs: {
       headerTrustUs: "Why should you trust us?",
-      p1: "Welcome to <span className='font-semibold'>Auto-Partner Atzendorf!</span>",
+      p1: "Welcome to ",
       p2: "We will take care of your tires and car as if they were our own. Your car is in the best hands with us, and our wide selection of tires from renowned brands guarantees safety and comfort on the road.",
       p3: "We focus on the highest quality of service, providing expert advice and a personalized approach to each customer.",
       p4: "Our experience in the industry ensures that you can fully trust us, whether you need tire replacement, repairs, or seasonal servicing. With us, every journey will be calmer and safer.",
@@ -170,7 +170,7 @@ export const translation: TranslationContent = {
       "Twoje opony, Twoje bezpieczeństwo. Zaufaj specjalistom od wulkanizacji, którzy zadbają o każdą trasę.",
     trustUs: {
       headerTrustUs: "Dlaczego warto nam zaufać?",
-      p1: "Witamy w <span className='font-semibold'>Auto-Partner Atzendorf!</span>",
+      p1: "Witamy w ",
       p2: "Zadbamy o Twoje opony i samochód, jak o nasze własne. Twoje auto jest u nas w najlepszych rękach, a szeroka oferta opon renomowanych marek to gwarancja bezpieczeństwa i komfortu na drodze.",
       p3: "Dbamy o najwyższą jakość obsługi, zapewniając fachowe doradztwo i indywidualne podejście do każdego klienta.",
       p4: "Nasze doświadczenie w branży sprawia, że możesz nam w pełni zaufać, niezależnie od tego, czy potrzebujesz wymiany opon, naprawy czy sezonowego serwisu. Z nami każda podróż będzie spokojniejsza i bezpieczniejsza.",
