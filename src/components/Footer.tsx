@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <span className={navStyle}>{translations.nav[0].name}</span>
         </Link>
         |
-        <Link to="about-us" smooth={true} duration={500}>
+        <Link to="services" smooth={true} duration={500}>
           <span className={navStyle}>{translations.nav[1].name}</span>
         </Link>
         |
