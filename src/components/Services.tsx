@@ -27,26 +27,26 @@ const Services: React.FC<idProp> = ({ id }) => {
       <div className="flex flex-col w-4/5 sm:w-3/5 md:w-full xl:w-4/5 md:justify-center gap-8 md:flex-row items-start mx-auto md:gap-4 md:px-4 2xl:gap-16 2xl:px-16">
         <ServiceBox
           icon={tyreIcon}
-          iconAlt="tyres service"
+          iconAlt="reifenservice"
           service={translations.services.headerTyreService}
           serviceImg={tyreService}
-          serviceImgAlt="tyres service"
+          serviceImgAlt="vulkanisation"
           serviceContent={translations.services.tyreServiceDesc}
         />
         <ServiceBox
           icon={moneyIcon}
-          iconAlt="money icon"
+          iconAlt="reifenverkauf"
           service={translations.services.headerTyreSales}
           serviceImg={tyresSales}
-          serviceImgAlt="tyres sales"
+          serviceImgAlt="reifenverkauf"
           serviceContent={translations.services.tyreSalesDesc}
         />
         <ServiceBox
           icon={repairIcon}
-          iconAlt="repair icon"
+          iconAlt="mechaniker"
           service={translations.services.headerCarService}
           serviceImg={carService}
-          serviceImgAlt="car service"
+          serviceImgAlt="mechaniker"
           serviceContent={translations.services.carServiceDesc}
         />
       </div>
