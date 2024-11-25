@@ -1,5 +1,5 @@
 import { useLanguage } from "../LanguageContext";
-import mainImg from "../assets/pexels-tima-miroshnichenko-5640639.jpg";
+import mainImg from "../assets/pexels-tima-miroshnichenko-5640639.webp";
 
 const MainImg: React.FC = () => {
   const { translations, language } = useLanguage();
