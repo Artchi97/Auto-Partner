@@ -11,7 +11,7 @@ const MainImg: React.FC = () => {
   return (
     <div
       style={{ backgroundImage: `url(${mainImg})` }}
-      className="bg-cover bg-center w-full h-60 md:h-96 mt-8 sm:mt-0 relative"
+      className="bg-cover bg-center w-full h-60 md:h-96 mt-8 sm:mt-0 relative animate-fade-in-img"
     >
       <div className="absolute w-full h-full bg-black opacity-35"></div>
 
