@@ -9,7 +9,7 @@ import logo from "../assets/Logo Auto-Partner .webp";
 const Footer: React.FC = () => {
   const { translations } = useLanguage();
   const navStyle: string =
-    "text-mainYellow mr-4 ml-4 md:mr-6 ml-6 hover:cursor-pointer py-1 px-0 hover:bg-mainYellow hover:text-mainBlack rounded-full transition-all duration-300";
+    "text-mainYellow mr-4 ml-4 md:mr-6 ml-6 hover:cursor-pointer py-1 px-2 hover:bg-mainYellow hover:text-mainBlack rounded-full transition-all duration-300";
 
   return (
     <footer className="bg-mainBlack px-2 md:px-8 pt-8 pb-2 relative">
